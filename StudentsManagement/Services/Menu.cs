@@ -64,14 +64,9 @@ namespace StudentsManagement.Services
 
                         break;
                     case "10":
-
+                        Console.WriteLine("Saliendo...");
+                        Console.ReadKey();
                         break;
-                }
-
-                if (Opc == "0")
-                {
-                    Console.WriteLine("Saliendo...");
-                    Console.ReadKey();
                 }
 
                 Condicion = false;
@@ -88,7 +83,9 @@ namespace StudentsManagement.Services
 
         public static void AddSubject()//Agregar Materia
         {
-
+            Console.Clear();
+            Header("Agregar Asignatura");
+            Services.Subject.Add();
         }
 
         public static void EnrollStudentInSubject()//Inscribir Estudiante En Asignatura

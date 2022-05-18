@@ -9,23 +9,27 @@ namespace StudentsManagement.Services
     {
         public static List<Entities.Subject> Subjects = new List<Entities.Subject>();
 
-        public void Add()
+        public static void Add()
         {
             Entities.Subject subject = new Entities.Subject();
-
+            Console.Write("Codigo de la materia: ");
+            subject.SubjectCode = Console.ReadLine();
+            Console.Write("Nombre de la materia: ");
+            subject.Name = Console.ReadLine();
+            Subjects.Add(subject);
         }
 
-        public void Delete()
+        public static void Delete()
         {
             throw new NotImplementedException();
         }
 
-        public void GetAll()
+        public static void GetAll()
         {
-            throw new NotImplementedException();
+
         }
 
-        public void Update()
+        public static void Update()
         {
             throw new NotImplementedException();
         }
